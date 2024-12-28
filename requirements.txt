@@ -1,2 +1,4 @@
 PyGithub
 python-statemachine
+Jinja2
+pydantic
