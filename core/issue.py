@@ -1,5 +1,6 @@
 from typing import List
 
+from core.repo import PydanticRepository
 from github import Repository
 from jinja2 import Template
 
@@ -7,11 +8,11 @@ with open("core/review.template.md") as f:
     review_template = Template(f.read())
 
 
-def create_issue(repo: Repository, assignees: List[str] = []) -> None:
+def create_issue(star_to_review: Repository, repo: PydanticRepository, assignees: List[str] = []) -> None:
     title = "Daily Review: `{}`".format(repo.full_name)
     body = review_template.render(repo=repo)
 
-    return repo.create_issue(
+    return star_to_review.create_issue(
         title=title,
         body=body,
         assignees=assignees,
