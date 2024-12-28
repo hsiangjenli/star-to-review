@@ -27,6 +27,7 @@ class PydanticRepository(BaseModel):
     stargazers_count: int
     state: ReviewState = Field(default_factory=ReviewState)
     last_commit: datetime.datetime = Field(default_factory=datetime.datetime.now)
+    issue_number: Optional[int] = Field(default=None)
 
     class Config:
         arbitrary_types_allowed = True  # 忽略自定義類型的模式生成
