@@ -17,7 +17,7 @@ def create_issue(repo: Repository, assignees: List[str] = []) -> None:
         title=title,
         body=body,
         assignees=assignees,
-        labels=["daily_review", repo.state.current_state.name.lower()],
+        labels=["daily_review"],
     )
 
 
