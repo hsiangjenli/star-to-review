@@ -1,24 +1,23 @@
+import datetime
 import json
 import os
 from typing import List, Optional
 
 from github import Github, Repository
 from pydantic import BaseModel, Field, field_serializer, field_validator
-from statemachine import StateMachine, State
+from statemachine import State, StateMachine
+
 
 class ReviewState(StateMachine):
     UNREVIEWED = State("UNREVIEWED", initial=True)
     REVIEWED = State("REVIEWED")
     RECHECK = State("RECHECK")
 
-    cycle = (
-        UNREVIEWED.to(REVIEWED)
-        | REVIEWED.to(RECHECK)
-        | RECHECK.to(REVIEWED)
-    )
+    cycle = UNREVIEWED.to(REVIEWED) | REVIEWED.to(RECHECK) | RECHECK.to(REVIEWED)
 
     def before_cycle(self, event: str, source: State, target: State):
         print(f"Transitioning from {source} to {target}")
+
 
 class PydanticRepository(BaseModel):
     name: str
@@ -27,6 +26,7 @@ class PydanticRepository(BaseModel):
     description: Optional[str]
     stargazers_count: int
     state: ReviewState = Field(default_factory=ReviewState)
+    last_commit: datetime.datetime = Field(default_factory=datetime.datetime.now)
 
     class Config:
         arbitrary_types_allowed = True  # 忽略自定義類型的模式生成
@@ -34,7 +34,7 @@ class PydanticRepository(BaseModel):
     @field_serializer("state")
     def serialize_state(self, state: ReviewState):
         return state.current_state.name
-    
+
     @field_validator("state", mode="before")
     @classmethod
     def deserialize_state(cls, value: str) -> ReviewState:
@@ -42,8 +42,8 @@ class PydanticRepository(BaseModel):
             state_machine = ReviewState()
             setattr(state_machine, "current_state", getattr(ReviewState, value))
             return state_machine
-        return value    
-        
+        return value
+
     @classmethod
     def from_repo(cls, repo: Repository):
         return cls(
@@ -54,7 +54,7 @@ class PydanticRepository(BaseModel):
             stargazers_count=repo.stargazers_count,
             state=ReviewState(),
         )
-    
+
 
 class PydanticRepositoryState(BaseModel):
     repos: List[PydanticRepository] = []
@@ -65,10 +65,10 @@ class PydanticRepositoryState(BaseModel):
             with open(filename) as f:
                 return cls.model_validate_json(json.load(f))
         return cls()
-        
+
     def save_to_json_file(self, filename: str):
         with open(filename, "w") as f:
-            json.dump(self.model_dump_json(indent=2), f)
+            json.dump(self.model_dump_json(), f)
 
     def add(self, repo: PydanticRepository):
         self.repos.append(repo)
@@ -115,5 +115,5 @@ if __name__ == "__main__":
     for repo in repos:
         r = PydanticRepository.from_repo(repo)
         repo_state.add(r)
-            
+
     repo_state.save_to_json_file(filename="repo_states.json")
