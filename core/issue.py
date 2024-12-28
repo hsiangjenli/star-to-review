@@ -13,7 +13,7 @@ def create_issue(repo: Repository, assignees: List[str] = []) -> None:
     with open("review.md", "w") as f:
         f.write(body)
 
-    repo.create_issue(
+    return repo.create_issue(
         title=title,
         body=body,
         assignees=assignees,
