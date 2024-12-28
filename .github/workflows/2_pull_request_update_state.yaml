@@ -1,0 +1,39 @@
+name: On Merge Pull Request
+
+on:
+  pull_request:
+    types:
+      - closed  # 當 PR 被關閉時觸發（包含合併）
+
+jobs:
+  process-merged-pr:
+    if: github.event.pull_request.merged == true  # 僅在合併時執行
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Process Merged PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: python pull_request.py --github-username hsiangjenli --pull-request-number $PR_NUMBER
+      
+      - name: Commit and Push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "bot: open issue and update state"
+          git push
