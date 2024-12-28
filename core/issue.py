@@ -10,8 +10,6 @@ with open("core/review.template.md") as f:
 def create_issue(repo: Repository, assignees: List[str] = []) -> None:
     title = "Daily Review: `{}`".format(repo.full_name)
     body = review_template.render(repo=repo)
-    with open("review.md", "w") as f:
-        f.write(body)
 
     return repo.create_issue(
         title=title,
