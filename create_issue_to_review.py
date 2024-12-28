@@ -18,7 +18,10 @@ star_to_review = github_client.get_repo(f"{username}/star-to-review")
 
 for repo in repo_state.repos:
     if repo.state.UNREVIEWED.is_active:
-        issue = create_issue(star_to_review=star_to_review, repo=repo, assignees=[username])
+        issue = create_issue(
+            star_to_review=star_to_review, repo=repo, assignees=[username]
+        )
+        repo.state.cycle()
         repo.issue_number = issue.number
         break
 

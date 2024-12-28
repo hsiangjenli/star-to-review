@@ -10,10 +10,10 @@ from statemachine import State, StateMachine
 
 class ReviewState(StateMachine):
     UNREVIEWED = State("UNREVIEWED", initial=True)
+    PENDING = State("PENDING")
     REVIEWED = State("REVIEWED")
-    RECHECK = State("RECHECK")
 
-    cycle = UNREVIEWED.to(REVIEWED) | REVIEWED.to(RECHECK) | RECHECK.to(REVIEWED)
+    cycle = UNREVIEWED.to(PENDING) | PENDING.to(REVIEWED) | REVIEWED.to(PENDING)
 
     def before_cycle(self, event: str, source: State, target: State):
         print(f"Transitioning from {source} to {target}")

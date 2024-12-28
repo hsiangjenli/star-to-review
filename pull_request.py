@@ -19,7 +19,7 @@ star_to_review = github_client.get_repo(f"{username}/star-to-review")
 pull_requests = star_to_review.get_pull(pull_request_number)
 
 for repo in repo_state.repos:
-    if repo.full_name in pull_requests.title:
+    if repo.full_name in pull_requests.title and repo.state.PENDING.is_active:
         repo.state.cycle()
 
 repo_state.save_to_json_file(filename="repo_states.json")
