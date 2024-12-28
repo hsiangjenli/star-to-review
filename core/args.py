@@ -9,6 +9,12 @@ def parse_args():
 
     args.add_argument("--github-username", required=True, help="GitHub username")
     args.add_argument(
+        "--pull-request-number",
+        required=False,
+        type=int,
+        help="GitHub pull request number",
+    )
+    args.add_argument(
         "--devel", required=False, type=bool, default=False, help="Development mode"
     )
 
