@@ -14,6 +14,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Pull latest changes from main
+        run: git pull origin main  # 確保本地與遠端同步
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
