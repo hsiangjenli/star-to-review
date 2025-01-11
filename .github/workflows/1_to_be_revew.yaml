@@ -32,9 +32,23 @@ jobs:
         run: |
           git fetch origin
           git checkout main
-          git pull origin main --rebase # 使用 rebase 確保提交記錄乾淨
+          
+          # 如果有未提交的更改，暫存起來
+          git diff --quiet || git stash
+
+          # 拉取遠端更改並使用 rebase 確保提交記錄乾淨
+          git pull origin main --rebase || git rebase --abort
+
+          # 恢復暫存的更改（如果有）
+          git stash pop || echo "No stashed changes to apply"
+
+          # 設定使用者資訊
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 提交變更（如果有新的改動）
           git add .
           git commit -m "bot: open issue and update state" || echo "No changes to commit"
+
+          # 推送到遠端
           git push origin main
