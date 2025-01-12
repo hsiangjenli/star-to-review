@@ -9,7 +9,7 @@ args = parse_args()
 
 token = os.getenv("GITHUB_TOKEN")
 username = args.github_username
-num_of_repos_to_recheck = 3
+num_of_repos_to_recheck = 1
 
 repo_state = PydanticRepositoryState.from_json_file(filename="repo_states.json")
 github_client = Github(token)
