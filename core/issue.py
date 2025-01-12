@@ -11,12 +11,16 @@ with open("core/review.template.md") as f:
 def create_issue(star_to_review: Repository, repo: PydanticRepository, assignees: List[str] = []) -> None:
     title = "Daily Review: `{}`".format(repo.full_name)
     body = review_template.render(repo=repo)
+    labels = ["daily_review"]
+
+    if "awesome" in repo.full_name:
+        labels.append("awesome")
 
     return star_to_review.create_issue(
         title=title,
         body=body,
         assignees=assignees,
-        labels=["daily_review"],
+        labels=labels,
     )
 
 
