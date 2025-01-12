@@ -22,7 +22,7 @@ for repo in repo_state.repos:
     if init >= num_of_repos_to_recheck:
         break
     if repo.state.REVIEWED.is_active:
-        star_to_review.get_issue(repo.issue_number).edit(state="open")
+        star_to_review.get_issue(repo.issue_number).edit(state="open", labels=["recheck"])
         repo.state.cycle()
         init += 1
 
