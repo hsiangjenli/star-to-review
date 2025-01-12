@@ -13,7 +13,7 @@ def create_issue(star_to_review: Repository, repo: PydanticRepository, assignees
     body = review_template.render(repo=repo)
     labels = ["daily_review"]
 
-    if "awesome" in repo.full_name:
+    if "awesome" in repo.full_name.lower():
         labels.append("awesome")
 
     return star_to_review.create_issue(
