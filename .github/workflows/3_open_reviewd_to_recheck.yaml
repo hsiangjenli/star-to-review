@@ -1,7 +1,7 @@
 name: Open Reviewed to Recheck
 
 on:
-  schedule: [{cron: "0 0 */14 * *"}]
+  schedule: [{cron: "0 0 */30 * *"}]
 
 jobs:
   sync:
