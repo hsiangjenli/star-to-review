@@ -41,7 +41,7 @@ In their implementation, they used the `DynamicCache` class from the `transforme
 1. `Sliding Window Cache`
 1. `Sink Cache`
 
-![alt text](image-9.png)
+![20250216142911](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250216142911.png)
 
 #### How to Use the Cache
 

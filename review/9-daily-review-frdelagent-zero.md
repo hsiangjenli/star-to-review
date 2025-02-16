@@ -26,20 +26,20 @@ docker run -p 50001:80 frdel/agent-zero-run
 1. The agent will take the input as a query and try to retrieve relevant information to better respond to it.
 For example, the agent retrieves a blog post about microservices.
 
-    ![alt text](image-1.png)
+    ![20250216142647](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250216142647.png)
 
 1. It also finds the necessary tools and solutions to write a blog post.
 
-    ![alt text](image-2.png)
+    ![20250216142658](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250216142658.png)
 
 1. Generating ...
 
-    ![alt text](image-3.png)
+    ![20250216142709](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250216142709.png)
 
 1. Even though the agent had a small issue saving the file, it was still able to solve the problem by itself.
 
-    ![alt text](image-4.png)
+    ![20250216142721](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250216142721.png)
 
-    ![alt text](image-5.png)
+    ![20250216142731](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250216142731.png)
 
-    ![alt text](image.png)
+    ![20250216142743](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250216142743.png)

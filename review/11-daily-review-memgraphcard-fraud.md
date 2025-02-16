@@ -31,7 +31,7 @@ def pump_transactions(...):
     the POS device)."""
 ```
 
-![alt text](image-7.png)
+![20250216142836](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250216142836.png)
 
 ## How to improve
 1. Explore whether a mathematical model exists to better simulate the probability of fraud occurring, rather than relying solely on random probabilities

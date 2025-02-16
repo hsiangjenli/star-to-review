@@ -70,4 +70,4 @@ celery-1           | [2025-01-26 09:23:08,664: INFO/ForkPoolWorker-9] OpenAi Aut
 celery-1           | 2025-01-26 09:23:08 UTC - Super AGI - INFO - [/app/superagi/llms/openai.py:108] - Incorrect API key provided: YOUR_OPE*****_KEY. You can find your API key at https://platform.openai.com/account/api-keys.
 ```
 
-![alt text](image-8.png)
+![20250216142601](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250216142601.png)
