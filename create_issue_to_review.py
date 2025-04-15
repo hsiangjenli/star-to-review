@@ -21,7 +21,7 @@ for repo in repo_state.repos:
         issue = create_issue(
             star_to_review=star_to_review, repo=repo, assignees=[username]
         )
-        repo.state.cycle()
+        repo.state.to_pending()
         repo.issue_number = issue.number
         break
 

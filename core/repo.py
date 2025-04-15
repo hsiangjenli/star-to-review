@@ -12,8 +12,14 @@ class ReviewState(StateMachine):
     UNREVIEWED = State("UNREVIEWED", initial=True)
     PENDING = State("PENDING")
     REVIEWED = State("REVIEWED")
+    NO_PLAN = State("NO_PLAN")
 
-    cycle = UNREVIEWED.to(PENDING) | PENDING.to(REVIEWED) | REVIEWED.to(PENDING)
+    to_pending = UNREVIEWED.to(PENDING)
+    to_reviewed = PENDING.to(REVIEWED)
+    to_no_plan = PENDING.to(NO_PLAN)
+
+    to_reconsider = REVIEWED.to(PENDING)
+    to_reconsider_no_plan = NO_PLAN.to(PENDING)
 
     def before_cycle(self, event: str, source: State, target: State):
         print(f"Transitioning from {source} to {target}")
@@ -73,12 +79,6 @@ class PydanticRepositoryState(BaseModel):
 
     def add(self, repo: PydanticRepository):
         self.repos.append(repo)
-
-    def update(self, repo: PydanticRepository):
-        for i, r in enumerate(self.repos):
-            if r.full_name == repo.full_name:
-                self.repos[i].state.cycle()
-                break
 
 
 def get_starred_repos(username: str, token: str) -> Repository:

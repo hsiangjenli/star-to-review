@@ -1,5 +1,6 @@
 import os
 import random
+
 from github import Github
 
 from core.args import parse_args
@@ -22,8 +23,10 @@ for repo in repo_state.repos:
     if init >= num_of_repos_to_recheck:
         break
     if repo.state.REVIEWED.is_active:
-        star_to_review.get_issue(repo.issue_number).edit(state="open", labels=["recheck"])
-        repo.state.cycle()
+        star_to_review.get_issue(repo.issue_number).edit(
+            state="open", labels=["recheck"]
+        )
+        repo.state.to_reconsider()
         init += 1
 
 repo_state.save_to_json_file(filename="repo_states.json")
