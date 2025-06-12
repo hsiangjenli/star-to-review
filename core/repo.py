@@ -42,6 +42,10 @@ class PydanticRepository(BaseModel):
     def serialize_state(self, state: ReviewState):
         return state.current_state.name
 
+    @field_serializer("last_commit")
+    def serialize_last_commit(self, dt: datetime.datetime):
+        return dt.isoformat()
+
     @field_validator("state", mode="before")
     @classmethod
     def deserialize_state(cls, value: str) -> ReviewState:
@@ -64,26 +68,43 @@ class PydanticRepository(BaseModel):
 
 
 class PydanticRepositoryState(BaseModel):
-    repos: List[PydanticRepository] = []
+    repos: dict[str, PydanticRepository] = Field(default_factory=dict)
 
     @classmethod
     def from_json_file(cls, filename: str):
         if os.path.exists(filename):
             with open(filename) as f:
-                return cls.model_validate_json(json.load(f))
+                data = json.load(f)
+                # 多重解析巢狀 JSON 字串
+                while isinstance(data, str):
+                    data = json.loads(data)
+                
+                # 處理最舊版直接儲存 list 的格式
+                if isinstance(data, list):
+                    return cls(repos={r.full_name: r for r in [PydanticRepository(**item) for item in data]})
+                
+                # 兼容過渡版 list 格式 (包含在 "repos" key 中)
+                repos_data = data.get("repos", [])
+                if isinstance(repos_data, list):
+                    return cls(repos={r.full_name: r for r in [PydanticRepository(**item) for item in repos_data]})
+                
+                # 處理新版 dict 格式
+                return cls(repos={k: PydanticRepository(**v) for k, v in data.get("repos", {}).items()})
         return cls()
 
     def save_to_json_file(self, filename: str):
         with open(filename, "w") as f:
-            json.dump(self.model_dump_json(), f)
+            json.dump({"repos": {k: v.model_dump(mode="json") for k, v in self.repos.items()}}, f, indent=2)
 
     def add(self, repo: PydanticRepository):
-        self.repos.append(repo)
+        """Add repository only if not exists"""
+        if repo.full_name not in self.repos:
+            self.repos[repo.full_name] = repo
 
 
 def get_starred_repos(username: str, token: str) -> Repository:
     """
-
+    
     Args:
         username (str): GitHub username
         token (str): GitHub token can be generated from Developer Settings
@@ -113,7 +134,14 @@ if __name__ == "__main__":
 
     repo_state = PydanticRepositoryState.from_json_file(filename="repo_states.json")
 
-    for repo in repos:
+    for repo in repo_state.repos.values():
+
+        if repo.full_name in [repo.full_name for repo in repos]:
+            print(f"Repository {repo.full_name} already exists in state.")
+            continue
+
+        print(f"Adding repository {repo.full_name} to state.")
+        
         r = PydanticRepository.from_repo(repo)
         repo_state.add(r)
 
