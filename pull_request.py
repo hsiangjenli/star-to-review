@@ -18,7 +18,7 @@ star_to_review = github_client.get_repo(f"{username}/star-to-review")
 
 pull_requests = star_to_review.get_pull(pull_request_number)
 
-for repo in repo_state.repos:
+for repo in repo_state.repos.values():
     if repo.full_name in pull_requests.title and repo.state.PENDING.is_active:
         repo.state.to_reviewed()
 
