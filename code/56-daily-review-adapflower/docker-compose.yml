@@ -1,0 +1,100 @@
+version: '3.9'
+
+services:
+  server:
+    build:
+      context: ./server
+    container_name: fl-server
+    networks:
+      flower_fl_net:
+        ipv4_address: 172.28.0.2
+    ports:
+      - "8080:8080"
+      - "8000:8000"  # Prometheus metrics endpoint
+    environment:
+      - ROLE=server
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+    
+
+  client1:
+    build:
+      context: ./client
+    container_name: fl-client1
+    networks:
+      flower_fl_net:
+        ipv4_address: 172.28.0.11
+    environment:
+      - ROLE=client
+      - SERVER_ADDRESS=fl-server:8080
+      - CLIENT_ID=client1
+    depends_on:
+      - server
+    restart: unless-stopped
+
+  client2:
+    build:
+      context: ./client
+    container_name: fl-client2
+    networks:
+      flower_fl_net:
+        ipv4_address: 172.28.0.12
+    environment:
+      - ROLE=client
+      - SERVER_ADDRESS=fl-server:8080
+      - CLIENT_ID=client2
+    depends_on:
+      - server
+    restart: unless-stopped
+
+  client3:
+    build:
+      context: ./client
+    container_name: fl-client3
+    networks:
+      flower_fl_net:
+        ipv4_address: 172.28.0.13
+    environment:
+      - ROLE=client
+      - SERVER_ADDRESS=fl-server:8080
+      - CLIENT_ID=client3
+    depends_on:
+      - server
+    restart: unless-stopped
+
+    
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: fl-prometheus
+    networks:
+      flower_fl_net:
+        ipv4_address: 172.28.0.20
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: fl-grafana
+    networks:
+      flower_fl_net:
+        ipv4_address: 172.28.0.21
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SECURITY_ADMIN_USER=admin
+    depends_on:
+      - prometheus
+
+networks:
+  flower_fl_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
