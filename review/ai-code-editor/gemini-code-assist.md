@@ -25,9 +25,21 @@
 - Custom Commands
 - Invoking Gemini Code Assist
 
+## 💻 Language & Framework Support
+- [Supported languages, IDEs, and interfaces](https://cloud.google.com/gemini/docs/codeassist/supported-languages)
+
+## 🚀 Usage & Performance
+- Speed and responsiveness : TODO
+- Resource usage : TODO
+
+### Code Assist Chat
 ![20250621231558](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250621231558.png)
 
+### Custom Commands
 ![20250621232641](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250621232641.png)
+
+### Styleguide
+- `.gemini/styleguide.md` describes the instructions Gemini should follow when reviewing code. This helps tailor its reviews to the repository's needs, ensuring they align with team standards and development practices.
 
 ### Manually invoke Gemini Code Assist
 
@@ -46,14 +58,6 @@
 `Code Review`
 
 ![20250621234651](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250621234651.png)
-
-## 💻 Language & Framework Support
-- `.gemini/styleguide.md` describes the instructions Gemini should follow when reviewing code. This helps tailor its reviews to the repository's needs, ensuring they align with team standards and development practices.
-- [Supported languages, IDEs, and interfaces](https://cloud.google.com/gemini/docs/codeassist/supported-languages)
-
-## 🚀 Performance
-- Speed and responsiveness : TODO
-- Resource usage : TODO
 
 ## 🤝 Collaboration & Integration
 - [Agents & Tools](https://codeassist.google.com/agents-tools)
