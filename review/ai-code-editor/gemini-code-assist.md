@@ -25,7 +25,7 @@
 ![20250621231558](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250621231558.png)
 
 ## 💻 Language & Framework Support
-- `.gemini/styleguide.md` 描述 Gemini 在審查程式碼時應遵循的指示，有助 Gemini 根據儲存庫的需求調整其程式碼審查，確保符合團隊的標準與開發習慣
+- `.gemini/styleguide.md` describes the instructions Gemini should follow when reviewing code. This helps tailor its reviews to the repository's needs, ensuring they align with team standards and development practices.
 - [Supported languages, IDEs, and interfaces](https://cloud.google.com/gemini/docs/codeassist/supported-languages)
 
 ## 🚀 Performance
