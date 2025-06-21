@@ -1,14 +1,15 @@
 # 🤖 Gemini Code Assist
 
-> Review date: YYYY-MM-DD
+> Review date:
+> - 2025-06-21 : Reviewed Gemini Code Assist for GitHub
 
 ## 📝 Introduction
 - Brief overview of the AI code editor : TODO
 
 ## ⚙️ Installation & Setup
 - Supported platforms : Visual Studio Code, GitHub, JetBrains IDE, Android Studio
-- Installation process
-- Initial configuration
+
+![20250621235308](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250621235308.png)
 
 ## 🖥️ User Interface & Usability
 - Layout and design : TODO
@@ -41,7 +42,6 @@
 
 `Summary of Changes`
 ![20250621234755](https://raw.githubusercontent.com/hsiangjenli/pic-bed/main/images/20250621234755.png)
-
 
 `Code Review`
 
@@ -76,7 +76,6 @@
 ## 👍 Pros & Cons
 
 ### Pros
-
 - TODO
 
 ### Cons
