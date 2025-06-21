@@ -26,7 +26,7 @@
 - Supported programming languages
 - Integration with frameworks and libraries
 
-## 🚀 Performance
+## 🚀 Usage & Performance
 - Speed and responsiveness
 - Resource usage
 
