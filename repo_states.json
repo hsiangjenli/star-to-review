@@ -16,9 +16,9 @@
       "html_url": "https://github.com/joshed-io/revealjs-themes",
       "description": "\ud83d\udc68\u200d\ud83c\udfa8 Free Reveal.js themes including robot-lung and sunblind",
       "stargazers_count": 67,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:44.419468",
-      "issue_number": null
+      "issue_number": 73
     },
     "thiviyanT/IntelliGraphs": {
       "name": "IntelliGraphs",
