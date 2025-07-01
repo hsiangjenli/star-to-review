@@ -26,9 +26,9 @@
       "html_url": "https://github.com/thiviyanT/IntelliGraphs",
       "description": "IntelliGraphs is a collection of graph datasets for benchmarking generative models for knowledge graphs.",
       "stargazers_count": 9,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:46.376053",
-      "issue_number": null
+      "issue_number": 74
     },
     "cdfoundation/sig-mlops": {
       "name": "sig-mlops",
