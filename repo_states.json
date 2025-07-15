@@ -36,9 +36,9 @@
       "html_url": "https://github.com/cdfoundation/sig-mlops",
       "description": "CDF SIG MLOps",
       "stargazers_count": 608,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:34.395187",
-      "issue_number": null
+      "issue_number": 75
     },
     "LinXueyuanStdio/LaTeX_OCR_PRO": {
       "name": "LaTeX_OCR_PRO",
