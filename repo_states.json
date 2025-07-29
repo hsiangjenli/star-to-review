@@ -46,9 +46,9 @@
       "html_url": "https://github.com/LinXueyuanStdio/LaTeX_OCR_PRO",
       "description": ":art: \u6570\u5b66\u516c\u5f0f\u8bc6\u522b\u589e\u5f3a\u7248\uff1a\u4e2d\u82f1\u6587\u624b\u5199\u5370\u5237\u516c\u5f0f\u3001\u652f\u6301\u521d\u7ea7\u7b26\u53f7\u63a8\u5bfc\uff08\u6570\u636e\u7ed3\u6784\u57fa\u4e8e LaTeX \u62bd\u8c61\u8bed\u6cd5\u6811\uff09Math Formula OCR Pro, supports handwrite, Chinese-mixed formulas and simple symbol reasoning (based on LaTeX AST). ",
       "stargazers_count": 1152,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:42.423221",
-      "issue_number": null
+      "issue_number": 76
     },
     "sbromberger/LightGraphs.jl": {
       "name": "LightGraphs.jl",
