@@ -121,12 +121,16 @@ def get_starred_repos(username: str, token: str) -> Repository:
 if __name__ == "__main__":
     import os
 
-    import dotenv
     from args import parse_args
 
-    args = parse_args()
+    try:
+        import dotenv
+        dotenv.load_dotenv()
+    
+    except:
+        pass
 
-    dotenv.load_dotenv()
+    args = parse_args()
 
     token = os.getenv("GITHUB_TOKEN")
     username = args.github_username
