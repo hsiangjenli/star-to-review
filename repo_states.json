@@ -56,9 +56,9 @@
       "html_url": "https://github.com/sbromberger/LightGraphs.jl",
       "description": "An optimized graphs package for the Julia programming language",
       "stargazers_count": 672,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:41.521814",
-      "issue_number": null
+      "issue_number": 77
     },
     "microsoft/markitdown": {
       "name": "markitdown",
