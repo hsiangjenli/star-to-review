@@ -66,9 +66,9 @@
       "html_url": "https://github.com/microsoft/markitdown",
       "description": "Python tool for converting files and office documents to Markdown.",
       "stargazers_count": 28483,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:34.394656",
-      "issue_number": null
+      "issue_number": 78
     },
     "hrhr49/tefcha": {
       "name": "tefcha",
