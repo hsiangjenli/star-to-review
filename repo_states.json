@@ -76,9 +76,9 @@
       "html_url": "https://github.com/hrhr49/tefcha",
       "description": "Text to Flowchart",
       "stargazers_count": 31,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:41.525425",
-      "issue_number": null
+      "issue_number": 79
     },
     "EtherTW/Terms": {
       "name": "Terms",
