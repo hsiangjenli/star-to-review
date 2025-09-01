@@ -86,9 +86,9 @@
       "html_url": "https://github.com/EtherTW/Terms",
       "description": "\u7ffb\u8b6f\u5340\u584a\u93c8\u76f8\u95dc\u5c08\u6709\u540d\u8a5e",
       "stargazers_count": 12,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:47.738927",
-      "issue_number": null
+      "issue_number": 80
     },
     "safe-graph/graph-fraud-detection-papers": {
       "name": "graph-fraud-detection-papers",
