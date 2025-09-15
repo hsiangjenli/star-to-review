@@ -96,9 +96,9 @@
       "html_url": "https://github.com/safe-graph/graph-fraud-detection-papers",
       "description": "A curated list of graph-based fraud, anomaly, and outlier detection papers & resources",
       "stargazers_count": 1469,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:48.753644",
-      "issue_number": null
+      "issue_number": 81
     },
     "domargan/awesome-dynamic-graphs": {
       "name": "awesome-dynamic-graphs",
