@@ -106,9 +106,9 @@
       "html_url": "https://github.com/domargan/awesome-dynamic-graphs",
       "description": "A collection of resources on dynamic/streaming/temporal/evolving graph processing systems, databases, data structures, datasets, and related academic and industrial work",
       "stargazers_count": 135,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:46.376272",
-      "issue_number": null
+      "issue_number": 82
     },
     "mkiseljov/graph-based-deep-learning-literature": {
       "name": "graph-based-deep-learning-literature",
