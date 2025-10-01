@@ -116,9 +116,9 @@
       "html_url": "https://github.com/mkiseljov/graph-based-deep-learning-literature",
       "description": "links to conference publications in graph-based deep learning",
       "stargazers_count": 1,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:47.738675",
-      "issue_number": null
+      "issue_number": 83
     },
     "microsoft/TRELLIS": {
       "name": "TRELLIS",
