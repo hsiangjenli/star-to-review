@@ -136,9 +136,9 @@
       "html_url": "https://github.com/shyamd/mkdocs-bibtex",
       "description": "A MkDocs plugin for citation management using bibtex",
       "stargazers_count": 79,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:42.425487",
-      "issue_number": null
+      "issue_number": 84
     },
     "rendercv/rendercv": {
       "name": "rendercv",
