@@ -146,9 +146,9 @@
       "html_url": "https://github.com/rendercv/rendercv",
       "description": "The engine of the RenderCV App",
       "stargazers_count": 2081,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:42.424415",
-      "issue_number": null
+      "issue_number": 85
     },
     "ButTaiwan/gensen-font": {
       "name": "gensen-font",
