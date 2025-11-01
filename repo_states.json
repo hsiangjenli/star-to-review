@@ -156,9 +156,9 @@
       "html_url": "https://github.com/ButTaiwan/gensen-font",
       "description": "A free font family derived from Source Han Sans.",
       "stargazers_count": 604,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:39.585861",
-      "issue_number": null
+      "issue_number": 86
     },
     "anthropics/anthropic-quickstarts": {
       "name": "anthropic-quickstarts",
