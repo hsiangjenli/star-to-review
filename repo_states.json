@@ -166,9 +166,9 @@
       "html_url": "https://github.com/anthropics/anthropic-quickstarts",
       "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Anthropic API",
       "stargazers_count": 7267,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:37.598927",
-      "issue_number": null
+      "issue_number": 87
     },
     "Azure/PyRIT": {
       "name": "PyRIT",
