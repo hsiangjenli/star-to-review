@@ -186,9 +186,9 @@
       "html_url": "https://github.com/neuml/txtai",
       "description": "\ud83d\udca1 All-in-one open-source embeddings database for semantic search, LLM orchestration and language model workflows",
       "stargazers_count": 9813,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:38.578549",
-      "issue_number": null
+      "issue_number": 89
     },
     "TheBlewish/Automated-AI-Web-Researcher-Ollama": {
       "name": "Automated-AI-Web-Researcher-Ollama",
