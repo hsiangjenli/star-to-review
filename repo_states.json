@@ -196,9 +196,9 @@
       "html_url": "https://github.com/TheBlewish/Automated-AI-Web-Researcher-Ollama",
       "description": "A python program that turns an LLM, running on Ollama, into an automated researcher, which will with a single query determine focus areas to investigate, do websearches and scrape content from various relevant websites and do research for you all on its own! And more, not limited to but including saving the findings for you!",
       "stargazers_count": 2433,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:35.548269",
-      "issue_number": null
+      "issue_number": 90
     },
     "Java-aid/Hackerrank-Solutions": {
       "name": "Hackerrank-Solutions",
