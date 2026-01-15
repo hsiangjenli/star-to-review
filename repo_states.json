@@ -226,9 +226,9 @@
       "html_url": "https://github.com/HigherOrderCO/Bend",
       "description": "A massively parallel, high-level programming language",
       "stargazers_count": 17827,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:35.547600",
-      "issue_number": null
+      "issue_number": 93
     },
     "osu-crypto/libOTe": {
       "name": "libOTe",
