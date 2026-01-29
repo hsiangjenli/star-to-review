@@ -236,9 +236,9 @@
       "html_url": "https://github.com/osu-crypto/libOTe",
       "description": "A fast, portable, and easy to use Oblivious Transfer Library",
       "stargazers_count": 444,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:34.396588",
-      "issue_number": null
+      "issue_number": 94
     },
     "FinMind/FinMind": {
       "name": "FinMind",
