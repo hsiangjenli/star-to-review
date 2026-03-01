@@ -266,9 +266,9 @@
       "html_url": "https://github.com/NirDiamant/RAG_Techniques",
       "description": "This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. RAG systems combine information retrieval with generative models to provide accurate and contextually rich responses.",
       "stargazers_count": 9655,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:40.482904",
-      "issue_number": null
+      "issue_number": 97
     },
     "NoviScl/AI-Researcher": {
       "name": "AI-Researcher",
