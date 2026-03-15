@@ -276,9 +276,9 @@
       "html_url": "https://github.com/NoviScl/AI-Researcher",
       "description": null,
       "stargazers_count": 246,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:38.580848",
-      "issue_number": null
+      "issue_number": 98
     },
     "memgraph/memgraph": {
       "name": "memgraph",
