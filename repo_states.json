@@ -286,9 +286,9 @@
       "html_url": "https://github.com/memgraph/memgraph",
       "description": "Open-source graph database, tuned for dynamic analytics environments. Easy to adopt, scale and own.",
       "stargazers_count": 2535,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:48.751172",
-      "issue_number": null
+      "issue_number": 99
     },
     "sourcebot-dev/sourcebot": {
       "name": "sourcebot",
