@@ -1,6 +1,6 @@
 import os
 
-from github import Github
+from github import Github, GithubException
 
 from core.args import parse_args
 from core.issue import create_issue
@@ -18,11 +18,14 @@ star_to_review = github_client.get_repo(f"{username}/star-to-review")
 
 for repo in repo_state.repos.values():
     if repo.state.PENDING.is_active and repo.issue_number:
-        issue = star_to_review.get_issue(repo.issue_number)
-        labels = [label.name for label in issue.labels]
-        if "no_plan" in labels:
-            issue.edit(state="closed")
-            repo.state.to_no_plan()
+        try:
+            issue = star_to_review.get_issue(repo.issue_number)
+            labels = [label.name for label in issue.labels]
+            if "no_plan" in labels:
+                issue.edit(state="closed")
+                repo.state.to_no_plan()
+        except GithubException:
+            pass
 
 for repo in repo_state.repos.values():
     if repo.state.UNREVIEWED.is_active:
