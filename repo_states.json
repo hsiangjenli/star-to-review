@@ -16,7 +16,7 @@
       "html_url": "https://github.com/joshed-io/revealjs-themes",
       "description": "\ud83d\udc68\u200d\ud83c\udfa8 Free Reveal.js themes including robot-lung and sunblind",
       "stargazers_count": 67,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:44.419468",
       "issue_number": 73
     },
@@ -36,7 +36,7 @@
       "html_url": "https://github.com/cdfoundation/sig-mlops",
       "description": "CDF SIG MLOps",
       "stargazers_count": 608,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:34.395187",
       "issue_number": 75
     },
@@ -46,7 +46,7 @@
       "html_url": "https://github.com/LinXueyuanStdio/LaTeX_OCR_PRO",
       "description": ":art: \u6570\u5b66\u516c\u5f0f\u8bc6\u522b\u589e\u5f3a\u7248\uff1a\u4e2d\u82f1\u6587\u624b\u5199\u5370\u5237\u516c\u5f0f\u3001\u652f\u6301\u521d\u7ea7\u7b26\u53f7\u63a8\u5bfc\uff08\u6570\u636e\u7ed3\u6784\u57fa\u4e8e LaTeX \u62bd\u8c61\u8bed\u6cd5\u6811\uff09Math Formula OCR Pro, supports handwrite, Chinese-mixed formulas and simple symbol reasoning (based on LaTeX AST). ",
       "stargazers_count": 1152,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:42.423221",
       "issue_number": 76
     },
@@ -66,7 +66,7 @@
       "html_url": "https://github.com/microsoft/markitdown",
       "description": "Python tool for converting files and office documents to Markdown.",
       "stargazers_count": 28483,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:34.394656",
       "issue_number": 78
     },
@@ -76,7 +76,7 @@
       "html_url": "https://github.com/hrhr49/tefcha",
       "description": "Text to Flowchart",
       "stargazers_count": 31,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:41.525425",
       "issue_number": 79
     },
@@ -176,7 +176,7 @@
       "html_url": "https://github.com/Azure/PyRIT",
       "description": "The Python Risk Identification Tool for generative AI (PyRIT) is an open source framework built to empower security professionals and engineers to proactively identify risks in generative AI systems.",
       "stargazers_count": 2013,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:42.427892",
       "issue_number": 88
     },
@@ -216,7 +216,7 @@
       "html_url": "https://github.com/google/forma",
       "description": "An efficient vector-graphics renderer",
       "stargazers_count": 2630,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:42.425167",
       "issue_number": 92
     },
@@ -256,7 +256,7 @@
       "html_url": "https://github.com/stanford-oval/storm",
       "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations.",
       "stargazers_count": 13776,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:38.579076",
       "issue_number": 96
     },
@@ -296,9 +296,9 @@
       "html_url": "https://github.com/sourcebot-dev/sourcebot",
       "description": "Blazingly fast code search \ud83c\udfce\ufe0f  Deployed as a single Docker image \ud83d\udce6 Search million+ lines of code in your GitHub, GitLab, Gitea, and Gerrit repositories \ud83e\ude84 MIT licensed \u2705",
       "stargazers_count": 1201,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:37.601710",
-      "issue_number": null
+      "issue_number": 100
     },
     "useblocks/sphinx-needs": {
       "name": "sphinx-needs",
@@ -1406,7 +1406,7 @@
       "html_url": "https://github.com/sighingnow/jekyll-gitbook",
       "description": "Build Jekyll site with GitBook style!",
       "stargazers_count": 542,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:46.375420",
       "issue_number": 48
     },
@@ -1576,7 +1576,7 @@
       "html_url": "https://github.com/markulrich/cs224w-enron",
       "description": "Missing link prediction on enron email multigraph",
       "stargazers_count": 1,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:46.372678",
       "issue_number": 60
     },
@@ -3426,7 +3426,7 @@
       "html_url": "https://github.com/victorgau/PyConTW2018Talk",
       "description": "\u571f\u70ae\u4e00\u500b Line \u80a1\u7968\u6a5f\u5668\u4eba",
       "stargazers_count": 21,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:52.299232",
       "issue_number": 53
     },
@@ -4186,7 +4186,7 @@
       "html_url": "https://github.com/RafalWilinski/cloudflare-rag",
       "description": "Fullstack \"Chat with your PDFs\" RAG (Retrieval Augmented Generation) app built fully on Cloudflare",
       "stargazers_count": 497,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:39.584140",
       "issue_number": 41
     },
@@ -4776,7 +4776,7 @@
       "html_url": "https://github.com/DrJuChunKoO/TransPal-editor",
       "description": null,
       "stargazers_count": 2,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:41.522267",
       "issue_number": 15
     },
@@ -5156,7 +5156,7 @@
       "html_url": "https://github.com/DrJuChunKoO/TransPal-website",
       "description": null,
       "stargazers_count": 3,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:41.524065",
       "issue_number": 19
     },
