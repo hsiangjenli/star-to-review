@@ -306,9 +306,9 @@
       "html_url": "https://github.com/useblocks/sphinx-needs",
       "description": "Adds needs/requirements to sphinx",
       "stargazers_count": 217,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:35.547464",
-      "issue_number": null
+      "issue_number": 101
     },
     "iamtrask/Grokking-Deep-Learning": {
       "name": "Grokking-Deep-Learning",
