@@ -316,9 +316,9 @@
       "html_url": "https://github.com/iamtrask/Grokking-Deep-Learning",
       "description": "this repository accompanies the book \"Grokking Deep Learning\"",
       "stargazers_count": 7479,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:50.575886",
-      "issue_number": null
+      "issue_number": 102
     },
     "axju/code2image": {
       "name": "code2image",
