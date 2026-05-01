@@ -336,9 +336,9 @@
       "html_url": "https://github.com/Valdecy/pyMetaheuristic",
       "description": "pyMetaheuristic: A Comprehensive Python Library for Optimization",
       "stargazers_count": 337,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:41.527430",
-      "issue_number": null
+      "issue_number": 103
     },
     "polynote/polynote": {
       "name": "polynote",
