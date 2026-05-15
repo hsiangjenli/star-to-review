@@ -356,9 +356,9 @@
       "html_url": "https://github.com/visenger/awesome-mlops",
       "description": "A curated list of references for MLOps ",
       "stargazers_count": 12707,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:43.539833",
-      "issue_number": null
+      "issue_number": 104
     },
     "aceberg/WatchYourLAN": {
       "name": "WatchYourLAN",
