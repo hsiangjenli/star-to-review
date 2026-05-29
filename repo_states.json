@@ -356,7 +356,7 @@
       "html_url": "https://github.com/visenger/awesome-mlops",
       "description": "A curated list of references for MLOps ",
       "stargazers_count": 12707,
-      "state": "PENDING",
+      "state": "NO_PLAN",
       "last_commit": "2024-12-28T16:46:43.539833",
       "issue_number": 104
     },
@@ -366,9 +366,9 @@
       "html_url": "https://github.com/aceberg/WatchYourLAN",
       "description": "Lightweight network IP scanner. Can be used to notify about new hosts and monitor host online/offline history",
       "stargazers_count": 4702,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:38.577289",
-      "issue_number": null
+      "issue_number": 105
     },
     "Skr-ZERO/MaokenAssortedSans-TC": {
       "name": "MaokenAssortedSans-TC",
