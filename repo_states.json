@@ -376,9 +376,9 @@
       "html_url": "https://github.com/Skr-ZERO/MaokenAssortedSans-TC",
       "description": "\u300a\u8c93\u5543\u4ec0\u9326\u9ed1\u300b\u7e41\u9ad4\u4e2d\u6587\u7248",
       "stargazers_count": 86,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:36.504613",
-      "issue_number": null
+      "issue_number": 106
     },
     "dvf/blockchain": {
       "name": "blockchain",
