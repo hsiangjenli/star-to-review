@@ -386,9 +386,9 @@
       "html_url": "https://github.com/dvf/blockchain",
       "description": "A simple Blockchain in Python",
       "stargazers_count": 7831,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:41.524436",
-      "issue_number": null
+      "issue_number": 107
     },
     "easy-graph/Easy-Graph": {
       "name": "Easy-Graph",
