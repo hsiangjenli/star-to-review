@@ -396,9 +396,9 @@
       "html_url": "https://github.com/easy-graph/Easy-Graph",
       "description": "EasyGraph is an open-source network analysis library designed to cover advanced network processing methods. It includes functionalities for detecting structural hole spanners, network embedding, and various classic network analysis techniques.",
       "stargazers_count": 403,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:43.542593",
-      "issue_number": null
+      "issue_number": 108
     },
     "vega/vega-lite": {
       "name": "vega-lite",
