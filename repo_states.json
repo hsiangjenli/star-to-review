@@ -406,9 +406,9 @@
       "html_url": "https://github.com/vega/vega-lite",
       "description": "A concise grammar of interactive graphics, built on Vega.",
       "stargazers_count": 4724,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:50.576307",
-      "issue_number": null
+      "issue_number": 109
     },
     "SpaceLearner/Awesome-DynamicGraphLearning": {
       "name": "Awesome-DynamicGraphLearning",
