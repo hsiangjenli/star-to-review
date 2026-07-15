@@ -416,9 +416,9 @@
       "html_url": "https://github.com/SpaceLearner/Awesome-DynamicGraphLearning",
       "description": "Awesome papers about machine learning (deep learning) on dynamic (temporal) graphs (networks / knowledge graphs).",
       "stargazers_count": 609,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:46.374335",
-      "issue_number": null
+      "issue_number": 110
     },
     "protofire/blockchain-learning-path": {
       "name": "blockchain-learning-path",
