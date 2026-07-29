@@ -426,9 +426,9 @@
       "html_url": "https://github.com/protofire/blockchain-learning-path",
       "description": "A suggested learning path for blockchain development",
       "stargazers_count": 2597,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:50.573910",
-      "issue_number": null
+      "issue_number": 111
     },
     "elapouya/python-docx-template": {
       "name": "python-docx-template",
