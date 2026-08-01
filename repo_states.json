@@ -436,9 +436,9 @@
       "html_url": "https://github.com/elapouya/python-docx-template",
       "description": "Use a docx as a jinja2 template",
       "stargazers_count": 2051,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:49.680628",
-      "issue_number": null
+      "issue_number": 112
     },
     "surrealdb/surrealdb": {
       "name": "surrealdb",
