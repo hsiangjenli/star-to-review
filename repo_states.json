@@ -446,9 +446,9 @@
       "html_url": "https://github.com/surrealdb/surrealdb",
       "description": "A scalable, distributed, collaborative, document-graph database, for the realtime web",
       "stargazers_count": 28401,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:42.425646",
-      "issue_number": null
+      "issue_number": 113
     },
     "Spr-Aachen/Easy-Voice-Toolkit": {
       "name": "Easy-Voice-Toolkit",
