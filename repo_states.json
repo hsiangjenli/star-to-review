@@ -466,9 +466,9 @@
       "html_url": "https://github.com/microsoft/python-package-template",
       "description": "Template for Python Projects",
       "stargazers_count": 474,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:42.427063",
-      "issue_number": null
+      "issue_number": 115
     },
     "hs-vae/ATM-Bank-Management": {
       "name": "ATM-Bank-Management",
