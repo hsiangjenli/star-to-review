@@ -486,9 +486,9 @@
       "html_url": "https://github.com/easy-graph/easygraph-bench",
       "description": "Benchmarking code and results of easygraph (Python / C++) and networkx",
       "stargazers_count": 1,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:43.542457",
-      "issue_number": null
+      "issue_number": 118
     },
     "astral-sh/ruff-pre-commit": {
       "name": "ruff-pre-commit",
