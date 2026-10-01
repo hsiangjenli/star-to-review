@@ -496,9 +496,9 @@
       "html_url": "https://github.com/astral-sh/ruff-pre-commit",
       "description": "A pre-commit hook for Ruff.",
       "stargazers_count": 1061,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:36.505153",
-      "issue_number": null
+      "issue_number": 119
     },
     "DS4SD/docling": {
       "name": "docling",
