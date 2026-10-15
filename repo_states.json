@@ -506,9 +506,9 @@
       "html_url": "https://github.com/DS4SD/docling",
       "description": "Get your documents ready for gen AI",
       "stargazers_count": 16770,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:36.503486",
-      "issue_number": null
+      "issue_number": 120
     },
     "OpenBMB/VisRAG": {
       "name": "VisRAG",
