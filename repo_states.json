@@ -516,9 +516,9 @@
       "html_url": "https://github.com/OpenBMB/VisRAG",
       "description": "Parsing-free RAG supported by VLMs",
       "stargazers_count": 514,
-      "state": "UNREVIEWED",
+      "state": "PENDING",
       "last_commit": "2024-12-28T16:46:36.504887",
-      "issue_number": null
+      "issue_number": 121
     },
     "onlook-dev/onlook": {
       "name": "onlook",
